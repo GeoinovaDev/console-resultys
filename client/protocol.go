@@ -17,6 +17,24 @@ type Service struct {
 	Path      string `json:"path"`
 }
 
+// GetPrivateHost ...
+func (s *Service) GetPrivateHost() string {
+	if len(s.Port) == 0 {
+		return s.PrivateIP
+	}
+
+	return s.PrivateIP + ":" + s.Port
+}
+
+// GetPublicHost ...
+func (s *Service) GetPublicHost() string {
+	if len(s.Port) == 0 {
+		return s.IP
+	}
+
+	return s.IP + ":" + s.Port
+}
+
 func (p *protocol) extractServices() []Service {
 	ss := []Service{}
 
