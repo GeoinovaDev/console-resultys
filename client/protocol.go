@@ -42,7 +42,7 @@ func (p *protocol) extractServices() []Service {
 		ss = append(ss, Service{
 			Name:      p.Data[i]["name"],
 			IP:        p.Data[i]["ip"],
-			Port:      p.Data[i]["prot"],
+			Port:      p.Data[i]["port"],
 			Group:     p.Data[i]["group"],
 			Type:      p.Data[i]["type"],
 			PrivateIP: p.Data[i]["pip"],
