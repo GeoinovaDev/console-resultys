@@ -11,8 +11,8 @@ type Client struct {
 }
 
 // New ...
-func New() *Client {
-	return &Client{host: "http://35.199.87.26:2020"}
+func New(ip string, port string) *Client {
+	return &Client{host: "http://" + ip + ":" + port}
 }
 
 // FindByName ...
