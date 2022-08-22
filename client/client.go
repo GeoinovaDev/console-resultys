@@ -1,8 +1,8 @@
 package client
 
 import (
-	"git.resultys.com.br/lib/lower/convert"
-	"git.resultys.com.br/lib/lower/net/request"
+	"github.com/GeoinovaDev/lower-resultys/convert"
+	"github.com/GeoinovaDev/lower-resultys/net/request"
 )
 
 // Client ...
